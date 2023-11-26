@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3D3AC1</color>
+    <color name="olive">#435334</color>
+    <color name="hijau">#839D67</color>
+    <color name="coklat">#DED3BD</color>
+    <color name="lightgreen">#CEDEBD</color>
+    <color name="abu">#AFAFAF</color>
+    <color name="coklat_gelap">#833301</color>
+</resources>

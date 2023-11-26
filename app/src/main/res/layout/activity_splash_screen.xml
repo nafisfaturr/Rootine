@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/motionLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/farmer"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:src="@drawable/farmerspnh"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="146dp"></ImageView>
+
+    <ImageView
+        android:id="@+id/tangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hand"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="180dp"></ImageView>
+
+    <ImageView
+        android:id="@+id/carrot"
+        android:layout_width="95dp"
+        android:layout_height="61dp"
+        android:rotation="25"
+        android:src="@drawable/carrotsp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="243dp"></ImageView>
+
+    <ImageView
+        android:id="@+id/tomate"
+        android:layout_width="95dp"
+        android:layout_height="61dp"
+        android:rotation="25"
+        android:src="@drawable/tomatosp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="191dp"></ImageView>
+
+    <ImageView
+        android:id="@+id/lobak"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:rotation="55"
+        android:src="@drawable/lobaksp"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="210dp"></ImageView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/pbold"
+        android:text="Mulai perjalananmu dengan Rootine"
+        android:textColor="@color/olive"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/farmer"></TextView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

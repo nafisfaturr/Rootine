@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="240dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/box_tittle"
+    android:backgroundTint="@color/coklat"
+    android:elevation="4dp"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="18dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/logout"
+        android:id="@+id/ikon_logout"
+        android:layout_marginTop="20dp"
+        ></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tekslogout"
+        android:gravity="center"
+        android:fontFamily="@font/pbold"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/batal"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/batallogout"
+            android:backgroundTint="@color/olive"></Button>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_logout"
+            android:backgroundTint="@color/olive"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

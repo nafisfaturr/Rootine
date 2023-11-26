@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Rootine</string>
+    <array name="role">
+        <item>Roles</item>
+        <item>Admin</item>
+        <item>Petani Sayur</item>
+        <item>Petani Buah</item>
+    </array>
+    <string-array name="nama_produk">
+        <item>(pilih produk)</item>
+        <item>Vitasampi</item>
+        <item>Vitamin B-1</item>
+        <item>Calcigro-98</item>
+        <item>Magic Soil Booster</item>
+    </string-array>
+    <string-array name="varian_produk">
+        <item>(pilih kapasitas).</item>
+        <item>500 g</item>
+        <item>1 kg</item>
+        <item>2 kg</item>
+        <item>3 kg</item>
+    </string-array>
+
+    <string name="akun">Akun</string>
+    <string name="sebagai">Sebagai</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="alamat">Alamat</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="masukan">Masukan</string>
+    <string name="q1_faq">Apa itu Rootine?</string>
+    <string name="a1_faq">Rootine adalah aplikasi berbasis mobile dan web yang diciptakan untuk menjadi asisten para petani.</string>
+    <string name="q2_faq">Apa saja fitur Rootine?</string>
+    <string name="a2_faq">Rootine provides 4 main features to help you, starting from detailed weather features, plant details, supporting products, and RootBot.</string>
+    <string name="q3_faq">Apa itu RootBot?</string>
+    <string name="a3_faq">Rootbot adalah salah satu fitur utama Rootine, yang merupakan chatbot berbasis AI. Kalian bisa berkonsultasi dengan RootBot mengenai masalah tanaman kalian.</string>
+    <string name="hintmasukan">Ketik feedback terbaikmu disini!</string>
+    <string name="kirim">Kirim</string>
+    <string name="batal">Batal</string>
+    <string name="beli">Beli</string>
+    <string name="simpan">Simpan</string>
+    <string name="tekslogout">Keluar dari akun anda?</string>
+    <string name="sapa">Selamat Datang!</string>
+    <string name="pagi">Selamat Pagi</string>
+    <string name="bsabsi">Apa yang ingin Anda lakukan?</string>
+    <string name="lang">Id</string>
+    <string name="nutrisi">Nutrisi</string>
+    <string name="hama">Hama</string>
+    <string name="kering">Kering</string>
+    <string name="lembab">Lembab</string>
+    <string name="basah">Basah</string>
+    <string name="diskusi">Ayo Diskusi dengan Rootbot</string>
+    <string name="d1">Diskusi Tanaman</string>
+    <string name="d2">Lihat Jawaban</string>
+    <string name="d4">Mulai Diskusi</string>
+    <string name="d3">Dapatkan Produk</string>
+    <string name="tkering">Tanaman Kering</string>
+    <string name="tlembab">Tanaman Lembab</string>
+    <string name="tbasah">Tanaman Basah</string>
+    <string name="jkeranjang">Keranjang Saya</string>
+    <string name="maudaftar">Belum punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="ayomulai">Ayo Kita Mulai!</string>
+    <string name="descmulai">Buat akun untuk mendapatkan semua fitur</string>
+    <string name="alamatkirim">Alamat Kirim</string>
+    <string name="jumlahpesanan">Jumlah</string>
+    <string name="beratpesanan">Massa</string>
+    <string name="konhapus">Apakah anda yakin menghapus pesanan?</string>
+    <string name="hapus">Hapus</string>
+    <string name="aksi">Aksi</string>
+    <string name="selesai">Selesai</string>
+    <string name="ubah">Ubah</string>
+    <string name="jproduk">Produk</string>
+    <string name="jtanaman">Tanaman</string>
+    <string name="katpro1">Penambah Nutrisi</string>
+    <string name="katpro2">Pembasmi Hama</string>
+    <string name="jtips">Tips Hari Ini</string>
+    <string name="jtideal">Tanaman Ideal</string>
+    <string name="jkelembaban">Kelembaban</string>
+    <string name="jterasa">Terasa</string>
+    <string name="judara">Udara</string>
+    <string name="jtekanan">Tekanan</string>
+    <string name="jawan">Berawan</string>
+    <string name="blmkon">Belum dikonfimasi</string>
+    <string name="kattanaman">Kategori Tanaman</string>
+    <string name="pilihbahasa">Pilih Bahasa</string>
+    <string name="detailProduk">Detail Produk</string>
+    <string name="deskripsiProduk">Deskripsi Produk</string>
+    <string name="belisekarang">Beli Sekarang!</string>
+    <string name="berat">Berat</string>
+    <string name="stok">Stok</string>
+    <string name="kategori">Kategori</string>
+    <string name="tingkat">Tingkat Kesulitan</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tipsmenanam">Tips Menanam</string>
+    <string name="hamaT">Hama</string>
+    <string name="penyakit">Penyakit</string>
+    <string name="cariproduk">Cari Produk</string>
+    <string name="sudahpunyaakun">Sudah punya akun?</string>
+    <string name="loginDisini">Login disini</string>
+    <string name="edit">Edit</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="ganti">Ganti</string>
+</resources>

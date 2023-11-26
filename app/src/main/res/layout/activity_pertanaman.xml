@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pertanaman">
+
+    <ScrollView
+        android:id="@+id/hal_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/judulhal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/hal_detail"
+            app:layout_constraintStart_toStartOf="@+id/hal_detail"
+            app:layout_constraintTop_toTopOf="@+id/hal_detail">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/box_judul_detail_tanaman">
+
+                <TextView
+                    android:id="@+id/nm_tanaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/pmedium"
+                    android:text="Jagung"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/latin_tanaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="36.4dp"
+                    android:fontFamily="@font/plight"
+                    android:text="(Zea Mays)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Kembali"
+                    android:onClick="backToTanaman"
+                    android:src="@drawable/ic_back_button"
+                    app:layout_constraintEnd_toEndOf="@+id/judulhal"
+                    app:layout_constraintHorizontal_bias="0.051"
+                    app:layout_constraintStart_toStartOf="@+id/judulhal"
+                    app:layout_constraintTop_toTopOf="@+id/judulhal"
+                    app:tint="#FFFFFF" />
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/box_detail_tanaman"
+                android:orientation="vertical"
+                android:paddingVertical="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/dImg_tanaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:src="@drawable/d_jagung" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="@string/tingkat"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/kesulitan"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/tingkat_kesulitan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="@string/deskripsi"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/desc_tanaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="22dp"
+                    android:fontFamily="@font/pregular"
+                    android:justificationMode="inter_word"
+                    android:text="Jagung  merupakan tanaman semusim dengan  batang  tumbuh  tegak, berakar serabut dan mempunyai tinggi antara 1-3 m. "
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="@string/tipsmenanam"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="22dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:id="@+id/tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/pregular"
+                        android:justificationMode="inter_word"
+                        android:text="Pemilihan lahan. Kondisi yang paling sesuai untuk menanam jagung adalah kondisi tanah sedang lembab. Pastikan tanah tidak terlalu basah dan tidak terlalu kering. Petani lokal biasanya menggunakan jarak tanam jagung antara 100 cm x 40 cm. Lalu, masukkan dua biji pada satu lubang tanam. Untuk kedalaman lubang tanam biasanya pada angka 3-5 cm."
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="@string/hamaT"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="22dp">
+
+                    <TextView
+                        android:id="@+id/hama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/pregular"
+                        android:justificationMode="inter_word"
+                        android:text="Semut merah(Solenopsis), Serangga ini menyerang ketika bibit jagung selesai ditanam lebih tepatnya bibit jagung manis. Tidak menutup kemungkinan untuk bibit jagung lainnya juga menjadi target serangan."
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="@string/penyakit"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="22dp">
+                    <TextView
+                        android:id="@+id/penyakit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/pregular"
+                        android:justificationMode="inter_word"
+                        android:text="Penyakit Bulai (PeronoscIerospora maydis) Gejala serangan terlihat pada permukaan daun yaitu terdapat garis-garis sejajar dengan tulang daun dan berwama putih sampai kuning, diikuti dengan garis-garis khlorotik sampai coklat bila infeksi makin lanjut. Tanaman terlihat kerdil dan tidak berproduksi."
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/goToProduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/hijau"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/psbold"
+                    android:textSize="12dp"
+                    android:text="@string/cariproduk"
+                    android:drawableLeft="@drawable/btn_produk"
+                    android:layout_marginTop="25dp"
+                    android:onClick="goToProduk">
+                </Button>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textSize="1dp"
+                android:layout_below="@id/card"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

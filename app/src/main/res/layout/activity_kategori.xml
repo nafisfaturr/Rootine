@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kategori">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_tittle"
+                android:layout_marginTop="18dp"
+                android:layout_marginHorizontal="20dp">
+            <TextView
+                android:id="@+id/judulhal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="7dp"
+                android:fontFamily="@font/pmedium"
+                android:text="@string/jtanaman"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Kembali"
+                android:onClick="backToHome"
+                android:src="@drawable/ic_back_button"
+                app:tint="#FFFFFF"
+                android:layout_marginLeft="24dp"/>
+            </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/judulhal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/lang"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tanam_kering"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/psbold"
+                    android:textSize="18dp"
+                    android:text="@string/tkering"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="15dp">
+                </TextView>
+
+                <GridView
+                    android:id="@+id/katalogkering"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_below="@id/tanam_kering"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="-276dp"
+                    android:layout_marginBottom="258dp"
+                    android:numColumns="4"
+                    android:paddingHorizontal="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tanam_lembab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/psbold"
+                    android:textSize="18dp"
+                    android:text="@string/tlembab"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="15dp">
+                </TextView>
+
+                <GridView
+                    android:id="@+id/kataloglembab"
+                    android:layout_width="match_parent"
+                    android:layout_height="455dp"
+                    android:layout_below="@id/tanam_lembab"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-266dp"
+                    android:layout_marginBottom="258dp"
+                    android:numColumns="4"
+                    android:paddingHorizontal="15dp"
+                    android:translationX="11dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tanam_basah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/psbold"
+                    android:textSize="18dp"
+                    android:text="@string/tbasah"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="15dp">
+                </TextView>
+
+                <GridView
+                    android:id="@+id/katalogbasah"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_below="@id/tanam_basah"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-276dp"
+                    android:layout_marginBottom="258dp"
+                    android:numColumns="4"
+                    android:paddingHorizontal="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
